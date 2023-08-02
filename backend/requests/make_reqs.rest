@@ -1,0 +1,34 @@
+GET http://localhost:3000/api/posts
+
+
+###
+GET http://localhost:3000/api/posts/64c92aecf1b7102f69ec7d12
+
+###
+POST http://localhost:3000/api/post
+Content-Type: application/json
+
+{
+    "email": "one two",
+    "Spots_Available": 4,
+    "Dorm": "Stuvi",
+    "Room_Number": 218,
+    "Room_Type": "10 people",
+    "Room_Capacity": 123
+}
+
+###
+PUT http://localhost:3000/api/posts/64c92aecf1b7102f69ec7d12
+Content-Type: application/json
+
+{
+    "email": "updated",
+    "Spots_Available": 4,
+    "Dorm": "updated",
+    "Room_Number": 218,
+    "Room_Type": "updated",
+    "Room_Capacity": 123
+}
+
+###
+DELETE http://localhost:3000/api/posts/64c92aecf1b7102f69ec7d12
