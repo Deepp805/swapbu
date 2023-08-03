@@ -19,7 +19,7 @@ app.get('/api/posts', (request, response) => {
     })
   })
 
-app.post('/api/post', (request, response) => {
+app.post('/api/posts', (request, response) => {
     const body = request.body
   
     // if (body.content === undefined) {
